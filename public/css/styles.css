@@ -1,0 +1,138 @@
+:root {
+    --box-shadow: 2px 2px 5px rgba(0, 0, 0, .6);
+    --radius: 3px;
+    --width: 80%;
+    --colorDefault: #635050;
+    --margin: 30px auto;
+    --size-letters: 1.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/mars.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    position: relative;
+}
+
+.container {
+    margin-top: 10px;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.form {
+    width: 600px;
+    height: 250px;
+    margin: var(--margin);
+    text-align: center;
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(245, 112, 72);
+}
+
+.form__title {
+    margin: 10px 20px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.lost__title {
+    font-size: var(--size-letters);
+    text-decoration: underline;
+}
+
+.input {
+    width: var(--width);
+    padding: 10px 5px;
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #755e5e;
+    outline: none;
+    color: var(--colorDefault);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.form__submit {
+    display: block;
+    width: var(--width);
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    color: #f8e6e6;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #c2b3b3;
+}
+
+.form__submit:hover {
+    background-color: var(--colorDefault);
+    color: #f8e6e6;
+}
+
+.form__submit:disabled {
+    background-color: #f1eded;
+    color: #755e5e;
+    cursor: default;
+}
+
+.container__success {
+    width: 600px;
+    display: block;
+    padding: 20px 30px;
+    margin: var(--margin);
+    background: rgba(101, 211, 101);
+    color: #fff;
+    font-weight: bold;
+    font-size: var(--size-letters);
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+}
+
+.container__error {
+    width: 600px;
+    display: block;
+    padding: 20px 30px;
+    margin: var(--margin);
+    background: rgba(245, 84, 84);
+    color: #fff;
+    font-weight: bold;
+    font-size: var(--size-letters);
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+}
+
+.form__lostOnes {
+    width: 600px;
+    margin: var(--margin);
+    text-align: center;
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(245 72 72);
+}
+
+.form__items {
+    color: #fff;
+    list-style: none;
+}
+
+.list_form {
+    padding: 5px;
+    padding: 5px;
+    font-size: var(--size-letters);
+}

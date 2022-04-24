@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robots in Planet Mars</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <h2 class="form__title">Send Coordinates to Move the Robot</h2>
+            <input type="text" name="positionTXT" id="positionTXT" maxlength="7" class="form__name input" placeholder="Enter coordinates">
+            <input type="text" name="orientationTxt" id="orientationTxt" maxlength="100" class="form__name input" placeholder="Enter trips">
+            <input type="button" value="Send" id="sendBtn" class="form__submit" disabled>
+        </div>
+        <div id="msgResult"></div>
+        <div class="form__lostOnes">
+            <h3 class="form__title lost__title">Lost Robots</h3>
+            <div id="listLostRobots" class="form__items"></div>
+        </div>
+
+    </div>
+    <script src="js/robotsApp.js"></script>
+</body>
+
+</html>
