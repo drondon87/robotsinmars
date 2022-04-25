@@ -1,4 +1,4 @@
-const urlService = 'http://localhost:8080/api/movements';
+const urlService = 'https://robotsinmars-app.herokuapp.com/api/movements';
 
 document.getElementById('sendBtn').addEventListener('click', (e) => {
     e.preventDefault();
